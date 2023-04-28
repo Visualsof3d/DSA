@@ -1,7 +1,7 @@
+// Link -> https://leetcode.com/problems/merge-intervals/
 #include <bits/stdc++.h>
 using namespace std;
 
-// Link -> https://leetcode.com/problems/merge-intervals/
 // Intervals = {{1,3}, {2,6}, {5,10}, {15,18}};
 // Output -> Intervals = {{1,10}, {15,18}};
 
