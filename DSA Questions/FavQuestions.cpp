@@ -25,3 +25,26 @@ while(true){
 	else if(j >= col){ j--; break;}
 }
 cout<< i <<" "<< j <<endl;
+
+
+
+
+/*
+	9 1 4 9 4
+      + 1 3 4 5 1
+-----------------
+      1 0 4 9 4 5
+ 
+*/
+vector<int> vec1 = {9,1,4,9,4};
+vector<int> vec2 = {1,3,4,5,1};
+vector<int> ans;
+int size1 = vec1.size()-1, size2 = vec2.size()-1, ifHaveCarry = 0;
+while(size1 >= 0 || size2 >= 0){
+     int i = size1 >= 0 ? vec1[size1--] : 0;
+     int j = size2 >= 0 ? vec2[size2--] : 0;
+     int sum = i + j + ifHaveCarry;
+     ans.push_back(sum%10);
+     ifHaveCarry = sum/10;
+}
+ans.push_back(ifHaveCarry);
