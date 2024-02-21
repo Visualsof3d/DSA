@@ -20,9 +20,9 @@ while(true){
     else if(dir == 3) i--;
 
     if(i < 0){ i++; break;}
-	else if(i >= row){ i--; break;}
-	else if(j < 0){ j++; break;}
-	else if(j >= col){ j--; break;}
+    else if(i >= row){ i--; break;}
+    else if(j < 0){ j++; break;}
+    else if(j >= col){ j--; break;}
 }
 cout<< i <<" "<< j <<endl;
 
